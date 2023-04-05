@@ -1,0 +1,38 @@
+.header {
+    padding: 1rem;
+
+    &__logo {
+    display: flex;
+    justify-content: center;
+    }
+}
+
+.search-section {
+
+    &-wrapper {
+        display: flex;
+        align-items: center;
+
+        &__input {
+            width: 75vw;
+            height: 10vw;
+            padding-left: 2rem;
+            background-image: url(/assets/images/search.svg);
+            background-repeat: no-repeat;
+            background-position: 0.5rem 0.3rem;
+            border-radius: .25rem;
+        }
+
+        &__user {
+            width: 2.25rem;
+            height: 2.25rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    &__button {
+        width: 90vw;
+    }
+}
+

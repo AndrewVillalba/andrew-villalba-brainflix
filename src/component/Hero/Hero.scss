@@ -1,0 +1,61 @@
+.video {
+
+    &-title {
+
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+
+        &-top {
+            display: flex;
+            justify-content: space-around;
+
+            &__author {
+
+            }
+            
+            &-views {
+                width: 15vw;
+                display: flex;
+                justify-content: space-between;
+
+                &__img {
+
+                }
+
+                &__viewcount {
+
+                }
+            }
+        }
+
+        &-bottom {
+            display: flex;
+            justify-content: space-around;
+
+            &__date {
+
+            }
+
+            &-likes {
+                width: 15vw;
+                display: flex;
+                justify-content: space-between;
+
+                &__img {
+
+                }
+
+                &__likecount {
+
+                }
+            }
+        }
+    }
+
+    &__desc {
+
+    }
+}
