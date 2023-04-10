@@ -1,9 +1,12 @@
+@use '../../styles/partials/variables.scss' as *;
+
 .header {
     padding: 1rem;
 
     &__logo {
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
     }
 }
 
@@ -11,16 +14,24 @@
 
     &-wrapper {
         display: flex;
+        justify-content: space-between;
         align-items: center;
+        padding-bottom: 1rem;
 
         &__input {
-            width: 75vw;
-            height: 10vw;
-            padding-left: 2rem;
+            width: 74vw;
+            height: 2.25rem;
+            padding-left: 2.2rem;
             background-image: url(/assets/images/search.svg);
             background-repeat: no-repeat;
-            background-position: 0.5rem 0.3rem;
+            background-position: 0.5rem 0.45rem;
+            background-color: $color-alabaster;
             border-radius: .25rem;
+            border: solid $color-mercury .0625rem;
+
+            &::placeholder {
+                color: $color-black;
+            }
         }
 
         &__user {
@@ -32,7 +43,12 @@
     }
 
     &__button {
+        height: 2.5rem;
         width: 90vw;
+        background-color: $color-blue;
+        border: 0px;
+        border-radius: .25rem;
+        color: $color-white;
     }
 }
 

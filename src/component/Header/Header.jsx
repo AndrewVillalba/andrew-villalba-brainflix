@@ -1,6 +1,6 @@
 import "./Header.scss";
 import companyLogo from '../../assets/images/BrainFlix-logo.svg';
-import searchSvg from '../../assets/images/search.svg'
+// import searchSvg from '../../assets/images/search.svg'
 import profilePic from '../../assets/images/Mohan-muruge.jpg'
 
 
@@ -16,7 +16,8 @@ function Header() {
               </label>
               <img className="search-section-wrapper__user" src={profilePic}></img>
             </div>
-            <button className="search-section__button">Upload</button>
+            
+            <button className="search-section__button"><img src="" alt="" />Upload</button>
           </div>
         </header>
       </>
