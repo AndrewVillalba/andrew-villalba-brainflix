@@ -9,13 +9,13 @@ function VideoDetails({selectedVideo}) {
     const date = new Date(timestamp).toLocaleDateString();
 
     return (
-        <div>
-        <div>
-          <h1>{title}</h1>
+        <div className='video-text'>
+        <div >
+          <h1 className='video-title'>{title}</h1>
         </div>
         <div className='video-info'>
           <div className='video-info-top'>
-            <p className='video-info-top__author'>{channel}</p>
+            <p className='video-info-top__author'>By {channel}</p>
             <div className='video-info-top-views'>
               <img src={viewsSvg} alt="views-svg" className='video-info-top-views__img'/>
               <p className='video-info-top-views__viewcount'>{views}</p>

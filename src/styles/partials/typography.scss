@@ -1,3 +1,5 @@
+@use '../../styles/partials/variables.scss' as *;
+
 @font-face {
     font-family: "Avenir Next";
     src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf) format("otf");
@@ -8,6 +10,86 @@
     font-family: "Avenir Next";
     src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf) format("otf");
     font-weight: 700;
+}
+
+.video-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.video-info {
+
+    &-top {
+
+        &__author {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        &-views__viewcount {
+            font-size: 14px;
+            color: $color-silver;
+        }
+    }
+
+    &-bottom {
+
+        &__date {
+            font-size: 14px;
+            color: $color-silver;
+        }
+
+        &-likes__likecount {
+            font-size: 14px;
+            color: $color-silver;
+        }
+    }
+}
+
+.video__desc {
+    font-size: .875rem;
+}
+
+.input-wrapper {
+
+    &__label {
+        font-size: .8125rem;
+        color: $color-silver;
+        font-weight: 550;
+    }
+
+    &__text {
+
+        &::placeholder {
+            color: $color-black;
+            font-weight: 500;
+        }
+    }
+
+    &__submit {
+        color: $color-white;
+        font-weight: 500;
+    }
+}
+
+.comment-card-wrapper {
+
+    &-top {
+
+        &__name {
+            font-size: .875rem;
+            font-weight: 600;
+        }
+
+        &__date {
+            font-size: .875rem;
+            color: $color-silver;
+        }
+    }
+
+    &__comment {
+        font-size: .875rem;
+    }
 }
 
 .next-video {

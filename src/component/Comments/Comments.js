@@ -10,9 +10,9 @@ function Comments({videos}){
                 <img className='input-img' src={mohan}></img>
                 <div className='input-wrapper'>
                     <form className='input-wrapper'>
-                        <label htmlFor='text'>JOIN THE CONVERSATION</label>
-                        <textarea className='input-wrapper__text' required name='text'></textarea>
-                        <label htmlFor='submit' placeholder='Add a new comment'></label>
+                        <label className='input-wrapper__label' htmlFor='text'>JOIN THE CONVERSATION</label>
+                        <textarea className='input-wrapper__text' placeholder='Add a new comment' required name='text'></textarea>
+                        <label htmlFor='submit' ></label>
                         <button name='submit' className='input-wrapper__submit'>COMMENT</button>
                     </form>
                 </div>

@@ -10,7 +10,7 @@ function CommentCard({comments}){
                         <p className='comment-card-wrapper-top__name'>{comments.name}</p>
                         <p className='comment-card-wrapper-top__date'>{new Date(comments.timestamp).toLocaleDateString()}</p>
                     </div>
-                    <p className='comment-card__comment'>{comments.comment}</p>
+                    <p className='comment-card-wrapper__comment'>{comments.comment}</p>
                 </div>
             </div>
             

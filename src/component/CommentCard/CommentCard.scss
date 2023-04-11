@@ -4,6 +4,9 @@
 
 .comment-card {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    border-bottom: solid 2px $color-mercury;
 
     &__img {
         height: 2.25rem;
@@ -20,6 +23,11 @@
         &-top {
             display: flex;
             justify-content: space-between;
+            padding-bottom: 0.5rem;
+        }
+
+        &__comment {
+            padding-bottom: 1rem;
         }
     }
 }

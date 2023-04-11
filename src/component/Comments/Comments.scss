@@ -1,19 +1,51 @@
+@use '../../styles/partials/variables.scss' as *;
+@use '../../styles/partials/typography.scss' as *;
+@use '../../styles/partials/mixins.scss' as *;
+
 .comment-section {
     padding: 1rem;
 }
 
 .input {
     display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: solid 2px $color-mercury;
+    margin-bottom: 1rem;
 
     &-img {
         width: 2.25rem;
         height: 2.25rem;
         object-fit: cover;
         border-radius: 50%;
+        margin-top: 1.3rem;
     }
 
     &-wrapper {
         display: flex;
         flex-direction: column;
+
+        &__text {
+            width: 73vw;
+            height: 6rem;
+            margin-top: 0.2rem;
+            margin-bottom: 1rem;
+            resize: none;
+            padding: 0.5rem;
+            border: solid 1px $color-mercury;
+            border-radius: 4px;
+            background-color: $color-alabaster;
+
+            &:focus {
+                outline: $color-blue;
+            }
+        }
+
+        &__submit {
+            background-color: $color-blue;
+            border: none;
+            height: 2.3rem;
+            border-radius: 4px;
+        }
     }
 }

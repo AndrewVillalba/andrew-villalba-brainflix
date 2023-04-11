@@ -1,14 +1,28 @@
+@use '../../styles/partials/variables.scss' as *;
+@use '../../styles/partials/mixins.scss' as *;
+@use '../../styles/partials/typography.scss' as *;
+
+.video-text {
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.video-title {
+    border-bottom: solid 2px $color-mercury;
+    padding-bottom: 1rem;
+}
+
+
 .video-info {
         display: flex;
         flex-direction: column;
+        border-bottom: solid 2px $color-mercury;
+        padding: 1rem 0 1rem 0;
 
         &-top {
             display: flex;
-            justify-content: space-around;
-
-            &__author {
-
-            }
+            justify-content:space-between;
+            padding-right: 6rem;
+            padding-bottom: 0.8rem;
             
             &-views {
                 width: 15vw;
@@ -16,18 +30,15 @@
                 justify-content: space-between;
 
                 &__img {
-
-                }
-
-                &__viewcount {
-
+                    padding-right: 0.5rem;
                 }
             }
         }
 
         &-bottom {
             display: flex;
-            justify-content: space-around;
+            justify-content:space-between;
+            padding-right: 6rem;
 
             &__date {
 
@@ -39,12 +50,12 @@
                 justify-content: space-between;
 
                 &__img {
-
-                }
-
-                &__likecount {
-
+                    padding-right: 0.5rem;
                 }
             }
         }
     }
+
+.video__desc {
+    padding-top: 1rem;
+}
