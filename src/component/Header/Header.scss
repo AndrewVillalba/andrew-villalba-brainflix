@@ -32,6 +32,10 @@
             &::placeholder {
                 color: $color-black;
             }
+
+            &:focus {
+                outline: solid $color-blue .0625rem;
+            }
         }
 
         &__user {
@@ -51,4 +55,3 @@
         color: $color-white;
     }
 }
-

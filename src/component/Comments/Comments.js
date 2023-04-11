@@ -5,7 +5,7 @@ import CommentCard from '../CommentCard/CommentCard.js'
 
 function Comments({videos}){
     return (
-        <div>
+        <div className='comment-section'>
             <div className='input'>
                 <img className='input-img' src={mohan}></img>
                 <div className='input-wrapper'>

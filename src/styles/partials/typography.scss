@@ -9,3 +9,19 @@
     src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf) format("otf");
     font-weight: 700;
 }
+
+.next-video {
+
+    &-wrapper {
+
+        &__title {
+            font-size: .8125rem;
+            font-weight: 600;
+        }
+
+        &__channel {
+            font-size: .8125rem;
+            font-weight: 400;
+        }
+    }
+}

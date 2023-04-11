@@ -1,0 +1,25 @@
+@use '../../styles/partials/mixins.scss';
+@use '../../styles/partials/typography.scss';
+@use '../../styles/partials/variables.scss' as *;
+
+.comment-card {
+    display: flex;
+
+    &__img {
+        height: 2.25rem;
+        width: 2.25rem;
+        background-color: $color-mercury;
+        border-radius: 50%;
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 75vw;
+
+        &-top {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

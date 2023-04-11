@@ -2,10 +2,12 @@ import '../NextVideoItem/NextVideoItem.scss'
 
 function NextVideoItem({clickHandler, video}) {
     return (
-        <div onClick={() => clickHandler(video.id)}>
-            <img className='next-video' src={video.image}></img>
-            <h3>{video.title}</h3>
-            <p>{video.channel}</p>
+        <div className='next-video' onClick={() => clickHandler(video.id)}>
+            <img className='next-video__thumbnail' src={video.image}></img>
+            <div className='next-video-wrapper'>
+                <h3 className='next-video-wrapper__title'>{video.title}</h3>
+                <p className='next-video-wrapper__channel'>{video.channel}</p>
+            </div>
         </div>
     )
 }

@@ -1,5 +1,26 @@
+@use '../../styles/partials/mixins.scss';
+@use '../../styles/partials/typography.scss';
+@use '../../styles/partials/variables.scss';
+
 .next-video {
-    width: 30vw;
-    height: 15vw;
-    object-fit: cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    
+    &__thumbnail {
+        width: 33vw;
+        height: 21vw;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 53vw;
+
+        &__title {
+            padding-bottom: 0.5rem;
+        }
+    }
 }

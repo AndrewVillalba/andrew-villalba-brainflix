@@ -25,8 +25,8 @@ function Main() {
           <VideoPlayer selectedVideo={selectedVideo}/>
           <VideoDetails selectedVideo={selectedVideo}/>
           <Comments videos={selectedVideo}/>
+          <h3 className="next-video">NEXT VIDEOS</h3>
           <NextVideo clickHandler={videoClick} videos={filteredVideos}/>
-          
         </main>
     )
 }
