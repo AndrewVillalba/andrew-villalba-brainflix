@@ -22,7 +22,7 @@ function Header() {
             </div>
             
             <button className="search-section__button">UPLOAD</button>
-          </div>
+          </div> 
         </header>
       </>
     );
