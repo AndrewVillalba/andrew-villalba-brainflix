@@ -1,28 +1,32 @@
 import "./Header.scss";
 import companyLogo from '../../assets/images/BrainFlix-logo.svg';
-import profilePic from '../../assets/images/Mohan-muruge.jpg'
-
+import profilePic from '../../assets/images/Mohan-muruge.jpg';
+import { Link } from "react-router-dom";
 
 function Header() {
 
     return (
       <>
         <header className="header">
-          <img className="header__logo" src={companyLogo}></img>
+          <div className="header-wrapper">
+            <Link to={'/'}><img className="header-wrapper__logo" src={companyLogo}></img></Link>
+          </div>
+          
           <div className="search-section">
             <div className="search-section-wrapper">
               <label>
-                <input type='text' className="search-section-wrapper__input work" placeholder="Search"></input>
+                <input type='text' className="search-section-wrapper__input" placeholder="Search"></input>
               </label>
-              <button className="search-section__button-tablet"><img src="" alt="" />Upload</button>
+              <Link to={'upload'}><button className="search-section__button-tablet">UPLOAD</button></Link>
               <img className="search-section-wrapper__user" src={profilePic}></img>
             </div>
             
-            <button className="search-section__button"><img src="" alt="" />Upload</button>
+            <button className="search-section__button">UPLOAD</button>
           </div>
         </header>
       </>
     );
 }
+
 
 export default Header;

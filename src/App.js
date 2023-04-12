@@ -1,12 +1,19 @@
 import Main from './component/Main/Main'
+import Upload from './pages/Upload/Upload';
+import Header from './component/Header/Header';
 import './App.scss'
+import { Routes, Route } from 'react-router-dom';
 
 
 function App() {
 
   return (
     <>
-      <Main />
+    <Header />
+    <Routes>
+      <Route path='/' element={<Main />}></Route>
+      <Route path='upload' element={<Upload />}></Route>
+    </Routes>
     </>
   );
 }

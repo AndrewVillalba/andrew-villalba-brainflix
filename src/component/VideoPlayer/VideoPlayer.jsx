@@ -6,7 +6,12 @@ import '../VideoPlayer/VideoPlayer.scss'
 
 function VideoPlayer({selectedVideo}) {
     return(
-        <video className="videoPlayer" controls poster={selectedVideo && selectedVideo.image}></video>
+        <div className='player-wrapper'>
+            <div className="player-wrapper__player--bg">
+                <video className="player-wrapper__player" controls poster={selectedVideo && selectedVideo.image}></video>
+            </div>
+        </div>
+
     )
 }
 

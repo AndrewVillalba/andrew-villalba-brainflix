@@ -1,6 +1,5 @@
 import axios from 'axios';
 import "./Main.scss";
-import Header from '../../component/Header/Header';
 import VideoPlayer from "../VideoPlayer/VideoPlayer";
 import videoDetails from '../../data/video-details.json'
 import VideoDetails from '../../component/VideoDetails/VideoDetails'
@@ -18,14 +17,6 @@ import Comments from '../Comments/Comments';
 
 function Main() {
 
-  // const getVideos = () => {
-  //   axios.get(api + videos +  apiKey)
-  //   .then(res => {
-  //     console.log(res.data.id)
-  //   }).catch(err => {
-  //     console.log(err)
-  //   })
-  // }
 
   const [selectedVideo, setSelectedVideo] = useState(videoDetails[0])
 
@@ -39,10 +30,6 @@ function Main() {
     return (
 
         <main>
-          {/* <div>
-            <button onClick={getVideos}>Show Video Info</button>
-          </div> */}
-          <Header />
           <VideoPlayer selectedVideo={selectedVideo}/>
           <VideoDetails selectedVideo={selectedVideo}/>
           <Comments videos={selectedVideo}/>

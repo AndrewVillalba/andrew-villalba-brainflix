@@ -12,6 +12,25 @@
     font-weight: 700;
 }
 
+.search-section {
+
+    &-wrapper__input::placeholder {
+        font-size: .625rem;
+        color: $color-black;
+        font-weight: 500;
+    }
+
+    &__button {
+        font-size: 12px;
+        font-weight: 600;
+
+        &-tablet {
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
+}
+
 .video-title {
     font-size: 1.5rem;
     font-weight: 600;

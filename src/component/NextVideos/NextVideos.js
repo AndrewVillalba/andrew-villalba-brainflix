@@ -7,7 +7,7 @@ function NextVideos({clickHandler, videos}){
         <section className='next-videos'>
             <h3 className="next-videos__header">NEXT VIDEOS</h3>
             {
-                videos && videos.map(video => (
+                videos.map(video => (
                     <NextVideoItem key={video.id} video={video} clickHandler={clickHandler}/>
                 ))
             }
