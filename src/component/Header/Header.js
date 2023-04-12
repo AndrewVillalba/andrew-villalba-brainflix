@@ -8,12 +8,13 @@ function Header() {
     return (
       <>
         <header className="header">
-          <a className="header__logo"><img src={companyLogo}></img></a>
+          <img className="header__logo" src={companyLogo}></img>
           <div className="search-section">
             <div className="search-section-wrapper">
               <label>
                 <input type='text' className="search-section-wrapper__input work" placeholder="Search"></input>
               </label>
+              <button className="search-section__button-tablet"><img src="" alt="" />Upload</button>
               <img className="search-section-wrapper__user" src={profilePic}></img>
             </div>
             

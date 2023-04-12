@@ -1,10 +1,11 @@
-import NextVideoItem from '../../component/NextVideoItem/NextVideoItem'
-import '../NextVideo/NextVideo.scss'
+import NextVideoItem from '../NextVideoItem/NextVideoItem'
+import '../NextVideos/NextVideos.scss'
 
 
-function NextVideo({clickHandler, videos}){
+function NextVideos({clickHandler, videos}){
     return (
         <section className='next-videos'>
+            <h3 className="next-videos__header">NEXT VIDEOS</h3>
             {
                 videos && videos.map(video => (
                     <NextVideoItem key={video.id} video={video} clickHandler={clickHandler}/>
@@ -14,4 +15,4 @@ function NextVideo({clickHandler, videos}){
     )
 }
 
-export default NextVideo;
+export default NextVideos;

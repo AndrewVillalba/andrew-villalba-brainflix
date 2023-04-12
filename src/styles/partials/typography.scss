@@ -22,12 +22,12 @@
     &-top {
 
         &__author {
-            font-size: 15px;
+            font-size: .8125rem;
             font-weight: 600;
         }
 
         &-views__viewcount {
-            font-size: 14px;
+            font-size: .8125rem;
             color: $color-silver;
         }
     }
@@ -35,25 +35,25 @@
     &-bottom {
 
         &__date {
-            font-size: 14px;
+            font-size: .8125rem;
             color: $color-silver;
         }
 
         &-likes__likecount {
-            font-size: 14px;
+            font-size: .8125rem;
             color: $color-silver;
         }
     }
 }
 
 .video__desc {
-    font-size: .875rem;
+    font-size: .8125rem;
 }
 
 .input-wrapper {
 
     &__label {
-        font-size: .8125rem;
+        font-size: .75rem;
         color: $color-silver;
         font-weight: 550;
     }
@@ -89,6 +89,15 @@
 
     &__comment {
         font-size: .875rem;
+    }
+}
+
+.next-videos {
+
+    &__header {
+        font-size: .875rem;
+        color: $color-silver;
+        font-weight: 600;
     }
 }
 

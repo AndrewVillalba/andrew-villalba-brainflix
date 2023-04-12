@@ -1,14 +1,31 @@
+import axios from 'axios';
 import "./Main.scss";
+import Header from '../../component/Header/Header';
 import VideoPlayer from "../VideoPlayer/VideoPlayer";
 import videoDetails from '../../data/video-details.json'
 import VideoDetails from '../../component/VideoDetails/VideoDetails'
 import videos from '../../data/videos.json'
 import { useState } from "react";
-import NextVideo from "../NextVideo/NextVideo";
-import Comments from '../Comments/Comments'
+import NextVideos from "../NextVideos/NextVideos";
+import Comments from '../Comments/Comments';
+
+// const api = "https://project-2-api.herokuapp.com/";
+// const apiKey = "?api_key=455c80ec-91e0-48c5-a08b-7d12531971ac";
+// const videos = "videos/";
+// const videosId = "videos/";
+
 
 
 function Main() {
+
+  // const getVideos = () => {
+  //   axios.get(api + videos +  apiKey)
+  //   .then(res => {
+  //     console.log(res.data.id)
+  //   }).catch(err => {
+  //     console.log(err)
+  //   })
+  // }
 
   const [selectedVideo, setSelectedVideo] = useState(videoDetails[0])
 
@@ -22,11 +39,14 @@ function Main() {
     return (
 
         <main>
+          {/* <div>
+            <button onClick={getVideos}>Show Video Info</button>
+          </div> */}
+          <Header />
           <VideoPlayer selectedVideo={selectedVideo}/>
           <VideoDetails selectedVideo={selectedVideo}/>
           <Comments videos={selectedVideo}/>
-          <h3 className="next-video">NEXT VIDEOS</h3>
-          <NextVideo clickHandler={videoClick} videos={filteredVideos}/>
+          <NextVideos clickHandler={videoClick} videos={filteredVideos}/>
         </main>
     )
 }

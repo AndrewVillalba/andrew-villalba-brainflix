@@ -15,7 +15,7 @@ function Comments({videos}){
                         <label htmlFor='submit' ></label>
                         <button name='submit' className='input-wrapper__submit'>COMMENT</button>
                     </form>
-                </div>
+                </div>   
             </div>
             <CommentCard comments={videos.comments[0]}/>
             <CommentCard comments={videos.comments[1]}/>

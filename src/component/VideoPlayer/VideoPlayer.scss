@@ -1,7 +1,15 @@
+@use '../../styles/partials/mixins.scss' as *;
+@use '../../styles/partials/variables.scss' as *;
+
+
 .videoPlayer {
     object-fit: contain;
     display: flex;
     justify-content: center;
     width: 100vw;
     padding: 1rem 0 0 0;
+
+    @include tablet {
+        padding: 0;
+    }
 }
