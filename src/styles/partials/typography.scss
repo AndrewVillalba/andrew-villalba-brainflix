@@ -1,4 +1,5 @@
 @use '../../styles/partials/variables.scss' as *;
+@use '../../styles/partials/mixins.scss' as *;
 
 @font-face {
     font-family: "Avenir Next";
@@ -31,36 +32,67 @@
     }
 }
 
-.video-title {
-    font-size: 1.5rem;
-    font-weight: 600;
+.video {
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        @include tablet {
+            font-size: 2.0625rem;
+        }
+    }
+
+    &__desc {
+        font-size: .8125rem;
+
+        @include tablet {
+            font-size: .875rem;
+        }
+    }
 }
 
 .video-info {
 
-    &-top {
+    &-left {
 
         &__author {
             font-size: .8125rem;
             font-weight: 600;
-        }
 
-        &-views__viewcount {
-            font-size: .8125rem;
-            color: $color-silver;
+            @include tablet {
+                font-size: .875rem;
+            }
         }
-    }
-
-    &-bottom {
 
         &__date {
             font-size: .8125rem;
             color: $color-silver;
+
+            @include tablet {
+                font-size: .875rem;
+            }
+        }
+    }
+
+    &-right {
+
+        &-views__viewcount {
+            font-size: .8125rem;
+            color: $color-silver;
+
+            @include tablet {
+                font-size: .875rem;
+            }
         }
 
         &-likes__likecount {
             font-size: .8125rem;
             color: $color-silver;
+
+            @include tablet {
+                font-size: .875rem;
+            }
         }
     }
 }

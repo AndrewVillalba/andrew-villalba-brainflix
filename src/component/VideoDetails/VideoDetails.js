@@ -11,21 +11,21 @@ function VideoDetails({selectedVideo}) {
     return (
         <div className='video-text'>
         <div >
-          <h1 className='video-title'>{title}</h1>
+          <h1 className='video__title'>{title}</h1>
         </div>
         <div className='video-info'>
-          <div className='video-info-top'>
-            <p className='video-info-top__author'>By {channel}</p>
-            <div className='video-info-top-views'>
-              <img src={viewsSvg} alt="views-svg" className='video-info-top-views__img'/>
-              <p className='video-info-top-views__viewcount'>{views}</p>
-            </div> 
+          <div className='video-info-left'>
+            <p className='video-info-left__author'>By {channel}</p>
+            <p className='video-info-left__date'>{date}</p>
           </div>
-          <div className='video-info-bottom'>
-            <p className='video-info-bottom__date'>{date}</p>
-            <div className='video-info-bottom-likes'>
-              <img src={likesSvg} alt="likes-svg" className='video-info-bottom-likes__img'/>
-              <p className='video-info-bottom-likes__likecount'>{likes}</p>
+          <div className='video-info-right'>
+            <div className='video-info-right-views'>
+              <img src={viewsSvg} alt="views-svg" className='video-info-right-views__img'/>
+              <p className='video-info-right-views__viewcount'>{views}</p>
+            </div> 
+            <div className='video-info-right-likes'>
+              <img src={likesSvg} alt="likes-svg" className='video-info-right-likes__img'/>
+              <p className='video-info-right-likes__likecount'>{likes}</p>
             </div>
           </div> 
         </div>
