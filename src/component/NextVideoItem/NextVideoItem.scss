@@ -1,4 +1,4 @@
-@use '../../styles/partials/mixins.scss';
+@use '../../styles/partials/mixins.scss' as *;
 @use '../../styles/partials/typography.scss';
 @use '../../styles/partials/variables.scss';
 
@@ -6,18 +6,32 @@
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 0rem 0.5rem 0rem;
+
+    @include tablet {
+        justify-content: flex-start;
+    }
     
     &__thumbnail {
         width: 33vw;
         height: 21vw;
         object-fit: cover;
         border-radius: 4px;
+
+        @include tablet {
+            width: 7rem;
+            height: 3.9375rem;
+            margin-right: 1rem;
+        }
     }
 
     &-wrapper {
         display: flex;
         flex-direction: column;
         width: 53vw;
+
+        @include tablet {
+            width: 10rem;
+        }
 
         &__title {
             padding-bottom: 0.5rem;

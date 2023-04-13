@@ -1,9 +1,18 @@
 @import '../../styles/partials/typography.scss';
+@import '../../styles/partials/mixins.scss';
 
 .next-videos {
     padding: 0 1rem 1rem 1rem;
 
+    @include tablet {
+        padding: 0 2rem 0 2rem;
+    }
+
     &__header {
         padding-bottom: 0.5rem;
+
+        @include tablet {
+            padding-bottom: 1rem;
+        }
     }
 }
