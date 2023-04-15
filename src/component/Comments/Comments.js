@@ -3,7 +3,8 @@ import mohan from '../../assets/images/Mohan-muruge.jpg'
 import CommentCard from '../CommentCard/CommentCard.js'
 
 
-function Comments({videos}){
+function Comments({video}){
+
     return (
         <div className='comment-section'>
             <p className='comment-section__number'>3 Comments</p>
@@ -21,9 +22,9 @@ function Comments({videos}){
                     </form>
                 </div>   
             </div>
-            <CommentCard comments={videos.comments[0]}/>
-            <CommentCard comments={videos.comments[1]}/>
-            <CommentCard comments={videos.comments[2]}/>
+            <CommentCard comments={video.comments[0]}/>
+            <CommentCard comments={video.comments[1]}/>
+            <CommentCard comments={video.comments[2]}/>
         </div>
     )
 }

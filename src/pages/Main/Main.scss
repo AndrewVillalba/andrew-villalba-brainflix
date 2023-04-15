@@ -1,0 +1,16 @@
+@use '../../styles/partials/mixins.scss' as *;
+
+.desktop-bottom {
+
+    @include desktop {
+        width: 100%;
+        display: flex;
+    }
+
+    &-left {
+
+        @include desktop {
+            width: 73%
+        }
+    }
+}

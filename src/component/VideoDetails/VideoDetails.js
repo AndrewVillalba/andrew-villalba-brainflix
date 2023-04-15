@@ -1,10 +1,12 @@
-import Main from '../Main/Main';
 import '../VideoDetails/VideoDetails.scss';
 import likesSvg from '../../assets/images/likes.svg';
 import viewsSvg from '../../assets/images/views.svg';
 
-function VideoDetails({selectedVideo}) {
-    const {title, channel, timestamp, description, likes, views} = selectedVideo;
+function VideoDetails({video}) {
+    
+    
+    const {title, channel, timestamp, views, likes, description} = video;
+    
 
     const date = new Date(timestamp).toLocaleDateString();
 

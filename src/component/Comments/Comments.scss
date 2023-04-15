@@ -22,7 +22,7 @@
     margin-bottom: 1rem;
 
     @include tablet {
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         padding-bottom: 0;
     }
@@ -84,11 +84,16 @@
                 width: 10rem;
                 height: 2.5rem;
                 margin-top: 0.2rem;
+                margin-left: 0.75rem;
             }
         }
     }
 }
 
 .text-wrapper {
-    width: 31rem;
+    width: 73vw;
+
+    @include tablet {
+        width: 30rem;
+    }
 }
