@@ -7,21 +7,39 @@
     padding: 0 1rem 0 1rem;
     width: 100vw;
 
+    @include tablet {
+        padding: 0 2rem 0 2rem;
+    }
+
+    @include desktop {
+        padding: 0 8rem 0 8rem;
+    }
+
     &-wrapper {
         border-top: .125rem solid $color-mercury;
     }
 
     &__heading {
         padding: 1rem 0 1rem 0;
+
+        @include tablet {
+            padding-top: 2rem;
+            border-bottom: .125rem solid $color-mercury;
+        }
     }
 
     &-label {
 
         &__img {
             padding-bottom: 0.3rem;
+
+            @include tablet {
+                padding-top: 1.5rem;
+            }
         }
 
         &__title {
+            padding-top: 1rem;
             padding-bottom: 0.3rem;
         }
 
@@ -33,13 +51,43 @@
     &__img {
         width: 100%;
         border-radius: .25rem;
-        padding-bottom: 1rem;
+
+        @include tablet {
+            width: 50%;
+        }
+
+        @include desktop {
+            width: 100%;
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+
+            @include desktop {
+                width: 33%;
+            }
+        }
     }
 
     &-form {
         display: flex;
         flex-direction: column;
         padding-bottom: 1rem;
+
+        @include tablet {
+            border-bottom: .125rem solid $color-mercury;
+            margin-bottom: 1rem;
+        }
+
+        @include desktop {
+            width: 65%;
+            border: none;
+            padding-top: 1.5rem;
+            padding-bottom: 0;
+            margin: 0;
+            justify-content: space-between;
+        }
 
         &__title {
             resize: none;
@@ -57,6 +105,10 @@
             border-radius: .25rem;
             padding: 0.6rem;
             background-color: $color-alabaster;
+
+            @include tablet {
+                height: 5rem;
+            }
         }
     }
 
@@ -66,17 +118,36 @@
         width: 100%;
         padding-bottom: 1rem;
 
+        @include tablet {
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+        }
+
+        & a {
+            
+            @include tablet {
+                width: 25%;
+            }
+
+            @include desktop {
+                width: 15%;
+            }
+        }
+
         &__publish {
             width: 100%;
             height: 2.5rem;
             border: none;
             border-radius: .25rem;
             margin-bottom: 1rem;
-            color: $color-white;
             background-image: url(../../assets/images/upload.svg);
             background-repeat: no-repeat;
             background-position: 8px center;
             background-color: $color-blue;
+
+            @include tablet {
+                width: 100%;
+            }
         }
 
         &__cancel {
@@ -85,8 +156,25 @@
             border: none;
             border-radius: .25rem;
             background-color: white;
+
+            @include tablet {
+                width: 25%;
+            }
+            
+            @include desktop {
+                width: 20%;
+            }
         }
     }
+}
 
-
+.desktop-wrapper {
+    
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: .125rem solid $color-mercury;
+        padding-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
 }
