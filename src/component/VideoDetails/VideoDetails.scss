@@ -8,6 +8,10 @@
     @include tablet {
         padding: 1rem 2rem 0rem 2rem;
     }
+
+    @include desktop {
+        padding: 2rem 0rem 0rem 2rem;
+    }
 }
 
 .video__title {
@@ -26,7 +30,11 @@
         flex-direction: row;
         justify-content: space-between;
         border-bottom: solid 2px $color-mercury;
-        padding: 1rem 0 0.5rem 0;
+        padding: 1rem 0 1rem 0;
+
+        @include desktop {
+            padding-right: 2rem;
+        }
 
         &-left {
             display: flex;
@@ -39,7 +47,7 @@
             }
 
             &__author {
-                padding-bottom: 0.5rem;
+                padding-bottom: 1rem;
 
                 @include tablet {
                     padding: 0rem 2rem 0 0 ;
@@ -62,7 +70,7 @@
                 width: 15vw;
                 display: flex;
                 justify-content: space-between;
-                padding-bottom: 0.5rem;
+                padding-bottom: 1remrem;
 
                 @include tablet {
                     justify-content: flex-end;
@@ -99,4 +107,8 @@
 
 .video__desc {
     padding-top: 1rem;
+
+    @include desktop {
+        padding-right: 2rem;
+    }
 }

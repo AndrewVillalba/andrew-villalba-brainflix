@@ -8,6 +8,10 @@
         padding: 0 2rem 0 2rem;
     }
 
+    @include desktop {
+        padding: 2rem 2rem 4rem 2rem;
+    }
+
     &__header {
         padding-bottom: 0.5rem;
 
