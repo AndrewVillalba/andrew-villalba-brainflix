@@ -9,6 +9,10 @@
         padding: 0 2.25rem;
     }
 
+    @include desktop {
+        padding: 0 11.6rem;
+    }
+
     &__player {
         position: absolute;
         width: 100%;
