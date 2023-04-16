@@ -26,6 +26,10 @@
             padding-top: 2rem;
             border-bottom: .125rem solid $color-mercury;
         }
+
+        @include desktop {
+            padding-bottom: 1.5rem;
+        }
     }
 
     &-label {
