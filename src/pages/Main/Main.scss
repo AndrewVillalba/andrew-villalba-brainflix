@@ -1,16 +1,19 @@
 @use '../../styles/partials/mixins.scss' as *;
+@use '../../styles/partials/variables.scss' as *;
 
 .desktop-bottom {
 
     @include desktop {
         width: 100%;
         display: flex;
+        padding: 0 4rem 0 4rem;
     }
 
     &-left {
 
         @include desktop {
-            width: 73%
+            width: 73%;
+            border-right: solid 2px $color-mercury;
         }
     }
 }
