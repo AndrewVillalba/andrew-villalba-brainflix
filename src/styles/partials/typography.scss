@@ -1,6 +1,5 @@
 @use '../../styles/partials/variables.scss' as *;
 @use '../../styles/partials/mixins.scss' as *;
-
 @font-face {
     font-family: "Avenir Next";
     src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf) format("otf");
@@ -186,6 +185,78 @@
             font-size: .8125rem;
             font-weight: 400;
             color: $color-black;
+        }
+    }
+}
+
+.upload {
+
+    &__heading {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $color-black;
+    }
+
+    &-label {
+
+        &__img {
+            font-size: .75rem;
+            color: $color-silver;
+            font-weight: 550;
+        }
+
+        &__title {
+            font-size: .75rem;
+            color: $color-silver;
+            font-weight: 550;
+
+            &::placeholder {
+                color: $color-black;
+                font-weight: 500;
+            }
+        }
+
+        &__desc {
+            font-size: .75rem;
+            color: $color-silver;
+            font-weight: 550;
+
+            &::placeholder {
+                color: $color-black;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &-form {
+
+        &__title {
+
+            &::placeholder {
+                color: $color-black;
+                font-weight: 500;
+            }
+        }
+
+        &__desc {
+
+            &::placeholder {
+                color: $color-black;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &-buttons {
+        
+        &__publish {
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        &__cancel {
+            font-size: 12px;
+            font-weight: 600;
         }
     }
 }

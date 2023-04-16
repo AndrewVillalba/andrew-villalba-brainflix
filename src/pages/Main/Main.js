@@ -51,7 +51,7 @@ function Main() {
   }, [videoIdDisplayed])
 
   if(video=== null) {
-    return <div>Loading!!</div>
+    return <div className='loader-wrapper'><div className='loader'></div></div>
   }  
 
 

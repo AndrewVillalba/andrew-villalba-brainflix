@@ -5,9 +5,14 @@ import CommentCard from '../CommentCard/CommentCard.js'
 
 function Comments({video}){
 
+    const getCommentCountText = () => {
+        const count = video.comments.length;
+        return count === 1 ? '1 Comment' : `${count} Comments`;
+    };
+
     return (
         <div className='comment-section'>
-            <p className='comment-section__number'>3 Comments</p>
+            <p className='comment-section__number'>{getCommentCountText()}</p>
             <div className='input'>
                 <img className='input-img' src={mohan}></img>
                 <div className='input-wrapper'>
@@ -22,9 +27,7 @@ function Comments({video}){
                     </form>
                 </div>   
             </div>
-            <CommentCard comments={video.comments[0]}/>
-            <CommentCard comments={video.comments[1]}/>
-            <CommentCard comments={video.comments[2]}/>
+            {video.comments.map(comment => <CommentCard comments={comment}/>)}
         </div>
     )
 }
