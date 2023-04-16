@@ -78,6 +78,10 @@
                 display: flex;
                 justify-content: space-between;
 
+                &__likecount {
+                    padding-left: 0.5rem;
+                }
+
                 @include tablet {
                     justify-content: flex-end;
                     padding: 0rem 0rem 0.5rem 0rem;
