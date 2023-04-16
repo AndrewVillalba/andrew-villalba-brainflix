@@ -12,6 +12,17 @@
         justify-content: flex-start;
     }
 
+    @include desktop {
+        padding-right: 2rem;
+    }
+
+    @include desktop {
+        border-bottom: none;
+        border-top: solid 2px $color-mercury;
+        padding-top: 1rem;
+        margin-bottom: 0;
+    }
+
     &__img {
         height: 2.25rem;
         width: 2.25rem;
@@ -20,6 +31,10 @@
 
         @include tablet {
             margin-right: 1rem;
+        }
+
+        @include desktop {
+            width: 3.25rem;
         }
     }
 
