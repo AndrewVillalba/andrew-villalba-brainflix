@@ -70,7 +70,7 @@
                 width: 15vw;
                 display: flex;
                 justify-content: space-between;
-                padding-bottom: 1remrem;
+                padding-bottom: 1rem;
 
                 @include tablet {
                     justify-content: flex-end;
@@ -92,7 +92,7 @@
 
                 @include tablet {
                     justify-content: flex-end;
-                    padding: 0rem 0rem 0.5rem 0rem;
+                    padding: 0rem 0rem 1rem 0rem;
                 }
 
                 &__img {
