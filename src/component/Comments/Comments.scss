@@ -77,7 +77,7 @@
             background-color: $color-alabaster;
 
             &:focus {
-                outline: $color-blue;
+                outline: solid $color-blue .0625rem;
             }
 
             @include tablet {

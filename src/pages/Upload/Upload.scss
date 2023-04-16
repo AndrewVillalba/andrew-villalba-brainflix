@@ -97,6 +97,10 @@
             height: 2.5rem;
             margin-bottom: 1rem;
             background-color: $color-alabaster;
+
+            &:focus {
+                outline: solid $color-blue .0625rem;
+            }
         }
 
         &__desc {
@@ -105,6 +109,10 @@
             border-radius: .25rem;
             padding: 0.6rem;
             background-color: $color-alabaster;
+
+            &:focus {
+                outline: solid $color-blue .0625rem;
+            }
 
             @include tablet {
                 height: 5rem;
