@@ -1,18 +1,13 @@
 import axios from 'axios';
 import "./Main.scss";
 import VideoPlayer from "../../component/VideoPlayer/VideoPlayer";
-// import videoDetails from '../../data/video-details.json'
 import VideoDetails from '../../component/VideoDetails/VideoDetails'
-// import videos from '../../data/videos.json'
 import { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 import NextVideos from "../../component/NextVideos/NextVideos";
 import Comments from '../../component/Comments/Comments';
 
-const api = "https://project-2-api.herokuapp.com/";
-const apiKey = "?api_key=455c80ec-91e0-48c5-a08b-7d12531971ac";
-const apiVideos = "videos/";
-
+const api = "http://localhost:8080";
 
 
 function Main() {
@@ -29,10 +24,10 @@ function Main() {
 
   let videoIdDisplayed = idFromParams || defaultVideoId;
 
-  const filteredVideos = videos.filter(video => video.id != videoIdDisplayed)
+  const filteredVideos = videos.filter(video => video.id !== videoIdDisplayed)
 
   useEffect(() => {
-    axios.get(api + apiVideos + apiKey)
+    axios.get(api + '/videos')
         .then(res => {
             setVideos(res.data);
         })
@@ -44,7 +39,7 @@ function Main() {
     if(videoIdDisplayed === null){
         return;
     }
-    axios.get(api + apiVideos + videoIdDisplayed + apiKey)
+    axios.get(api + `/videos/${videoIdDisplayed}`)
         .then(response => {
             setVideo(response.data);
         })
@@ -52,7 +47,7 @@ function Main() {
 
   if(video=== null) {
     return <div className='loader-wrapper'><div className='loader'></div></div>
-  }  
+  } 
 
 
     return (
