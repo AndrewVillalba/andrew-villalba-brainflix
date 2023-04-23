@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import uploadPreview from '../../assets/images/Upload-video-preview.jpg';
 import '../../pages/Upload/Upload.scss'
 const api = "http://localhost:8080";
@@ -42,7 +43,7 @@ function Upload() {
                     </form>
                 </div>
                 <div className='upload-buttons'>
-                    <button className='upload-buttons__publish buttons' onClick={handlePublish}>PUBLISH</button>
+                    <Link to={'/'}><button className='upload-buttons__publish buttons' onClick={handlePublish}>PUBLISH</button></Link>
                     <button className='upload-buttons__cancel buttons'>CANCEL</button> 
                 </div>
             </div>
